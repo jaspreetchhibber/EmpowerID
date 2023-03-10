@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {}
+    "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\EmpowerID.DAL.csproj": {
+    "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\EmpowerID.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\EmpowerID.DAL.csproj",
+        "projectUniqueName": "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\EmpowerID.DAL.csproj",
         "projectName": "EmpowerID.DAL",
-        "projectPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\EmpowerID.DAL.csproj",
+        "projectPath": "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\EmpowerID.DAL.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\obj\\",
+        "outputPath": "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {
+    "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj",
+        "projectUniqueName": "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj",
         "projectName": "EmpowerID.WebAPI",
-        "projectPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj",
+        "projectPath": "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\obj\\",
+        "outputPath": "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
@@ -117,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\EmpowerID.DAL.csproj": {
-                "projectPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.DAL\\EmpowerID.DAL.csproj"
+              "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\EmpowerID.DAL.csproj": {
+                "projectPath": "D:\\Projects\\EmpowerID\\EmpowerID.DAL\\EmpowerID.DAL.csproj"
               }
             }
           }

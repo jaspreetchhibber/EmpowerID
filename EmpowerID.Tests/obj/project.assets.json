@@ -8768,11 +8768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.Tests\\EmpowerID.Tests.csproj",
+      "projectUniqueName": "D:\\Projects\\EmpowerID\\EmpowerID.Tests\\EmpowerID.Tests.csproj",
       "projectName": "EmpowerID.Tests",
-      "projectPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.Tests\\EmpowerID.Tests.csproj",
+      "projectPath": "D:\\Projects\\EmpowerID\\EmpowerID.Tests\\EmpowerID.Tests.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.Tests\\obj\\",
+      "outputPath": "D:\\Projects\\EmpowerID\\EmpowerID.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
@@ -8795,8 +8795,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {
-              "projectPath": "D:\\Projects\\EmpowerID_10Mar\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj"
+            "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj": {
+              "projectPath": "D:\\Projects\\EmpowerID\\EmpowerID.WebAPI\\EmpowerID.WebAPI.csproj"
             }
           }
         }

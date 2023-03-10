@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EmpowerID.Tests
-build_property.ProjectDir = D:\Projects\EmpowerID_10Mar\EmpowerID.Tests\
+build_property.ProjectDir = D:\Projects\EmpowerID\EmpowerID.Tests\

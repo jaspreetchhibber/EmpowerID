@@ -12,3 +12,17 @@ D:\Projects\EmpowerID_10Mar\EmpowerID.DAL\obj\Debug\net6.0\refint\EmpowerID.DAL.
 D:\Projects\EmpowerID_10Mar\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.pdb
 D:\Projects\EmpowerID_10Mar\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.genruntimeconfig.cache
 D:\Projects\EmpowerID_10Mar\EmpowerID.DAL\obj\Debug\net6.0\ref\EmpowerID.DAL.dll
+D:\Projects\EmpowerID\EmpowerID.DAL\bin\Debug\net6.0\EmpowerID.DAL.deps.json
+D:\Projects\EmpowerID\EmpowerID.DAL\bin\Debug\net6.0\EmpowerID.DAL.runtimeconfig.json
+D:\Projects\EmpowerID\EmpowerID.DAL\bin\Debug\net6.0\EmpowerID.DAL.dll
+D:\Projects\EmpowerID\EmpowerID.DAL\bin\Debug\net6.0\EmpowerID.DAL.pdb
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.csproj.AssemblyReference.cache
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.AssemblyInfoInputs.cache
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.AssemblyInfo.cs
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.dll
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\refint\EmpowerID.DAL.dll
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.pdb
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\EmpowerID.DAL.genruntimeconfig.cache
+D:\Projects\EmpowerID\EmpowerID.DAL\obj\Debug\net6.0\ref\EmpowerID.DAL.dll
