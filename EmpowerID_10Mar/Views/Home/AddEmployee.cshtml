@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+}
+@model EmployeeViewModel
+
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        @if (Model.Id == 0)
+        {
+            <h2>Add Employee</h2>
+        }
+        else
+        {
+            <h2>Edit Employee</h2>
+        }
+
+    </div>
+
+    <form method="post" action="AddEmployee" enctype="multipart/form-data">
+        <div asp-validation-summary="All"></div>
+        <input type="hidden" asp-for="Id" value="@Model.Id">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="FirstName">First Name</label>
+                <input type="text" class="form-control mb-3" asp-for="FirstName" placeholder="Enter First Name">
+                <span asp-validation-for="FirstName" class=" alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="LastName">Last Name</label>
+                <input type="text" class="form-control mb-3" asp-for="LastName" placeholder="Enter Last Name">
+                <span asp-validation-for="LastName" class=" alert-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Email">Email</label>
+                <input type="text" class="form-control mb-3" asp-for="Email" placeholder="Enter Email">
+                <span asp-validation-for="Email" class=" alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label asp-for="DOB">DOB</label>
+                @{
+                    if (Model.Id != 0)
+                    {
+                        <input type="date" class="form-control" asp-for="DOB">
+                    }
+                    else
+                    {
+                        <input type="date" class="form-control" value="@DateTime.Now" asp-for="DOB">
+                    }
+                }
+                <span asp-validation-for="DOB" class=" alert-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="DepartmentId">Department</label>
+                <select class="form-control" asp-for="DepartmentId">
+                    @if (ViewBag.Deparments != null)
+                    {
+                        foreach (var itm in ViewBag.Deparments)
+                        {
+                            <option value="@itm.Id">@itm.DepartmentName</option>
+                        }
+                    }
+
+                </select>
+                <span asp-validation-for="Department.Id" class=" alert-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row" style="text-align:right;">
+            <button type="submit" class="btn btn-lg btn-primary p-2 btn-right"><i class="bi bi-file-plus-fill"></i>Save</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-warning p-2">Back To List</a>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<EmployeeViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*@
+
+<h2 class="text-capitalization text-center">List of Employees</h2>
+<p>
+    <a asp-action="AddEmployee" class="btn btn-primary">Add Employee <i class="fa-solid fa-circle-plus"></i></a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th style="display:none;">
+                @Html.DisplayNameFor(model=>model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Department)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr class="data">
+                        <td id="Id" style="display:none;">@Html.DisplayFor(model=>item.Id)</td>
+                        <td>
+                            @Html.DisplayFor(model=>item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model=>item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model=>item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model=>item.DOB)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model=>item.Department.DepartmentName)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("AddEmployee",new { id=item.Id})" class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a class="btn btn-sm btn-danger" href="javascript:" data-bs-toggle='modal' data-bs-target='#modal-lg' onclick="openDeleteEmployeeModal(@item.Id)"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="txtModalTitle">Delete Employee</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="txtModalContent">Are you sure you want to delete this employee?</p>
+                <input type="hidden" id="employeeId" />
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" id="btnDelete" onclick="DeleteEmployee()">Yes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+@section Scripts{
+    <script>
+        function openDeleteEmployeeModal(id) {
+            $("#employeeId").val(id);
+        }
+        function DeleteEmployee() {
+            var id = $("#employeeId").val();
+            var uri = "/Home/DeleteEmployee";
+            fetch(`${uri}?id=${id}`, {
+                method: 'DELETE'
+            })
+                .then(response => response.json())
+                .then(json => {
+                    if (json) {
+                        if (json.redirectUrl) {
+                            var data = $("tr.data").map(function (index, elem) {
+                                var trToEdit = $(this).filter(
+                                    function (index) {
+                                        if (id === $(this).find('#Id').text()) {
+                                            this.remove();
+                                        }
+                                    }
+                                );
+                            });
+                        }
+                    }
+                })
+                .catch(error => console.error('Unable to delete item.', error));
+            $(".close").trigger("click");
+        }
+    </script>
+}

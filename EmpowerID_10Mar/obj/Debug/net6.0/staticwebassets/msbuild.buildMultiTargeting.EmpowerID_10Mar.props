@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EmpowerID_10Mar.props" />
+</Project>

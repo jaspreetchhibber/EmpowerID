@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pSrs+7B4wR0Dhpvbdud9YJHGpzEsaY5BcgIH1LJ2UIY=",
+  "Source": "EmpowerID.WebAPI",
+  "BasePath": "_content/EmpowerID.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
